@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+
+    <title>Portfolio Site | LIYU FENG</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+
+    <!-- <style>
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+        }
+    </style> -->
+</head>
+<body>
+    <header class="global-header">
+        <a href="index.html" class="top-icon"><img src="image/topicon.png" alt="top-icon"></a>
+        <!-- <div class="menu_box"> -->
+            <div class="openbtn1"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <!-- <nav class="gnav"> -->
+                        <ul class="gnav__menu">
+                            <li><a href="index.html">Top</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        
+                        </ul>
+                    </div>
+                    </nav>
+                
+                <div class="circle-bg"></div>
+            
+        <!-- </div> -->
+    </header>
+
+    <div class="main-page">
+        <p class="main-content1">Graphic Design</p>
+        <p class="main-content2">PORTFOLIO</p>
+        <p class="main-content3">LIYU FENG</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+          $('.main-content1').show().animate({
+            top: '0', // 目标位置
+            opacity: 1 // 目标透明度
+          }, 700); // 0.7秒内完成动画
+          
+          $('.main-content2').delay(700).show().animate({
+            top: '0', // 目标位置
+            opacity: 1 // 目标透明度
+          },700); // 0.7秒内完成动画
+          
+          $('.main-content3').delay(2000).show().animate({
+            top: '0', // 目标位置
+            opacity: 1 // 目标透明度
+          }, 700); // 0.7秒内完成动画
+        });
+        </script>
+
+    
+
+<div class="main-works">
+    <h1 class="works-title">Works</h1>
+
+    <div class="icon-contents">
+        <ul class="icon-list">
+            <li class="icon-list-inner">
+                <p class="text">Poster/Adv.</p>
+                <a href="works-poster.html">
+                <img src="image/postericon.png" alt="" class="icon-img">
+                </a>
+            </li>
+
+            <li class="icon-list-inner">
+                <p class="text">Illustration</p>
+                <a href="works-illustration.html">
+                <img src="image/illustrator.png" alt="" class="icon-img">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="icon-contents">
+        <ul class="icon-list">
+            <li class="icon-list-inner">
+                <p class="text">Package</p>
+                <a href="works-package.html">
+                <img src="image/packageicon.png" alt="" class="icon-img">
+                </a>
+            </li>
+
+            <li class="icon-list-inner">
+                <p class="text">Photograph</p>
+                <a href="works-photograph.html">
+                <img src="image/photographicon.png" alt="" class="icon-img">
+                </a>
+            </li>
+
+            <li class="icon-list-inner">
+                <p class="text">Video</p>
+                <a href="works-video.html">
+                <img src="image/videoicon.png" alt="" class="icon-img">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+                <!-- <div class="icon-list-box2"> -->
+                    <!-- <ul class="icon-list">
+                        <li class="insidebox">
+                            <div class="text-wrap">
+                                <p class="text3">Package</p>
+                            </div>
+                            <a href="#"><img src="image/packageicon.png" alt="packageicon"></a>
+                        </li>
+                        <li class="insidebox">
+                            <div class="text-wrap">
+                                <p class="text4">Photograph</p>
+                            </div>
+                            <a href="#"><img src="image/photographicon.png" alt="photographicon"></a>
+                        </li>
+                        <li class="insidebox">
+                            <div class="text-wrap">
+                                <p class="text5">Video</p>
+                            </div>
+                            <a href="#"><img src="image/videoicon.png" alt="videoicon"></a>
+                        </li>
+                    </ul> -->
+                <!-- </div> -->
+            </div>
+        
+
+    <div class="main-profile">
+        <h2 class="profile-title">Profile</h2>
+        <!-- <h3 class="language">英語　日本語　中国語　広東語</h3> -->
+        <div class="profile-1">
+            <img src="image/experience.png" alt="experience" class="experience">
+        </div>
+        
+        <div class="side-profile">
+
+            <div class="profile-2">
+                <p class="name">LIYU FENG<br />ヒョウレイユ</p>
+            </div>
+
+            <div class="profile-pic">
+                <h1 class="profile-2-img">
+                    <img src="image/profile-img.png" alt="profile-img" class="profile-img">
+                </h1>
+
+            </div>
+            <div class="profile-3-img">
+                <img src="image/profile.png" class="profile-picture3" alt="profile-picture">
+            </div>
+        </div>
+    </div>
+
+    <div class="main-contact">
+        <h3 class="contact-title">Contact</h3>
+        <img src="image/mail.png" alt="mailicon" class="mailicon">
+        <p class="email">carpfong@gmail.com</p>
+    </div>
+
+    <footer class="global-footer">
+        <p class="footer-text">2024 LIYUFENG All rights reserved.</p>
+    </footer>
+
+    <!-- fadein JS -->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--自作のJS-->
+    <script src="js/5-1-20.js"></script>
+    
+</body>
+
+</html>

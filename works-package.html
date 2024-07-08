@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="js/5-1-20.js">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <title>Portfolio Site|works-package</title>
+
+</head>
+
+<body>
+    
+    <header class="global-header">
+        <a href="index.html" class="top-icon"><img src="image/topicon.png" alt="top-icon"></a>
+        <!-- <div class="menu_box"> -->
+            <div class="openbtn1"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <!-- <nav class="gnav"> -->
+                        <ul class="gnav__menu">
+                            <li><a href="index.html">Top</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        
+                        </ul>
+                    </div>
+                    </nav>
+                
+                <div class="circle-bg"></div>
+            
+        <!-- </div> -->
+    </header>  
+    
+
+
+    <div class="works-content-box">
+
+        <div class="works-left-area">
+    
+    <p class="works-title-illu">パッケージ</p>
+    <p class="works-title2-illu">サンスイ
+        （Sansui・山水）
+        <br />リップスティック</p>
+    
+        </div>
+    
+        <div class="works-right-area">
+    <p class="illu-caption">サンスイ（SanSui）は、ハーブとナチュラル製品のブランドで、自然からの贈り物を大切にし、健康とバランスのための心地よい製品を提供しています。その豊かな自然の恵みと調和したデザインは、日常の生活に癒しと発展をもたらし、心身の健康をサポートします。
+    
+    </p>
+    
+
+   <img src="image/sansui_logo.png" class="sansuilogo" alt="sansuilogo">
+    
+    <div class="package-pic-box">
+
+        <div class="package-pic-left">
+    <img src="image/package2.jpg" class="package_pic_1" alt="">
+    </div>
+    <div class="package-pic-right">
+    <img src="image/package1.jpg" class="package_pic_2" alt="package_pic_2">
+    </div>
+    </div>
+    
+    <img src="image/packagelayout.png" class="packagelayout" alt="packagelayout">
+        </div>
+    
+    
+    </div>
+    
+    
+   
+       <div class="divider">
+       
+           <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+           <script src="js/5-1-20.js"></script>
+       
+       </div>
+
+
+
+
+
+
+
+
+
+    <footer class="global-footer">
+        <p class="footer-text">2024 LIYUFENG All rights reserved.</p>
+    </footer>
+
+
+
+    <!-- fadein JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--自作のJS-->
+    <script src="js/5-1-20.js"></script>
+ 
+    <script>
+    $(document).ready(function() {
+        // 淡入效果的调整，确保在Safari中兼容
+        $('.main-content1').css({ display: 'block', opacity: 0, top: '50px' }).animate({ top: '0', opacity: 1 }, 700);
+        $('.main-content2').css({ display: 'block', opacity: 0, top: '50px' }).delay(700).animate({ top: '0', opacity: 1 }, 700);
+        $('.main-content3').css({ display: 'block', opacity: 0, top: '50px' }).delay(700).animate({ top: '0', opacity: 1 }, 700);
+    
+        $(".openbtn1").click(function() {
+            $(this).toggleClass('active');
+            $("#g-nav").toggleClass('panelactive');
+            $(".circle-bg").toggleClass('circleactive');
+        });
+    
+        $("#g-nav a").click(function() {
+            $(".openbtn1").removeClass('active');
+            $("#g-nav").removeClass('panelactive');
+            $(".circle-bg").removeClass('circleactive');
+        });
+    });
+</script>
+    
+    
+
+</body>
+
+
+</html>

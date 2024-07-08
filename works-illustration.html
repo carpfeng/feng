@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="js/5-1-20.js">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <title>Portfolio Site|works-illustration</title>
+
+</head>
+
+<body>
+    
+    <header class="global-header">
+        <a href="index.html" class="top-icon"><img src="image/topicon.png" alt="top-icon"></a>
+        <!-- <div class="menu_box"> -->
+            <div class="openbtn1"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <!-- <nav class="gnav"> -->
+                        <ul class="gnav__menu">
+                            <li><a href="index.html">Top</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        
+                        </ul>
+                    </div>
+                    </nav>
+                
+                <div class="circle-bg"></div>
+            
+        <!-- </div> -->
+    </header>  
+    
+    <div class="works-content-box">
+
+        <div class="works-left-area">
+       <p class="works-title-illu">企業キャラクター</p>
+       <p class="works-title2-illu">栃木乳業キャラクターデザイン企画
+    </p>
+
+     </div>   
+       
+        <div class="works-right-area">
+        
+           <p class="illu-caption">三つの味の栃木牛乳ドリンクについて、三つのユニークモンキーキャラクターのデザイン。<br />中央のキャラクターは、いちごちゃんです。頭にイチゴを乗せ、体に「イチゴ」と書かれています。これはイチゴ味の製品を表現していることを示唆しています。<br />
+            左側のキャラクターはレンモンちゃんです。レモンを持っており、「レモンレモン」と書かれたパッケージを持っています。このキャラクターは、満足げな表情でレモン製品の爽やかさやフレッシュさを強調しています。<br />右側のキャラクターはコーヒーちゃんです。コーヒーのパッケージを持ち、ストローで飲んでいます。コーヒーのシンボルが描かれており、落ち着いた表情でリラックスした雰囲気を醸し出しています。
+           </p>
+
+           <div class="illu-contect-box">
+<img src="image/monkeytochigi.png" class="works-illu" alt="monkey_illu">
+           
+       </div>
+
+        </div>
+    </div>
+
+
+       <div class="divider">
+       
+           <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+           <script src="js/5-1-20.js"></script>
+       
+       </div>
+
+<div class="works-content-box2">
+
+    <div class="works-left-area">
+
+<p class="works-title-illu">Miss Dior <br />香水雑誌広告企画</p>
+<p class="works-title2-illu">コピーワーク <br />
+    『花より　美しい』 <br />
+    “MORE THAN BLOSSOM”</p>
+
+    </div>
+
+    <div class="works-right-area">
+<p class="illu-caption">全体的にインラスト風で表現しました。背景とフレグランスをグラデーションで配色。 <br />多くの花を使わずに、シンプルにデザインし、色彩のビジョンを通じて香水の香りを表現しました。淡いピンクや優雅な紫の花々が、穏やかな優雅さを漂わせ、明るいゴールドのアクセントが香りの豊かさを象徴しています。
+
+</p>
+
+<img src="image/dior_adv2.jpg" class="illu-dior-1" alt="">
+
+<div class="illu-pic-box">
+    <div class="illu-pic-left">
+<img src="image/dior_adv.jpg" class="illu-dior-2" alt="">
+</div>
+<div class="illu-pic-right">
+<img src="image/Magazine_Mockup.jpg" class="illu-dior-3" alt="">
+<img src="image/Magazine_Mockup_1.jpg" class="illu-dior-4" alt="">
+</div>
+</div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    <footer class="global-footer">
+        <p class="footer-text">2024 LIYUFENG All rights reserved.</p>
+    </footer>
+
+
+
+    <!-- fadein JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--自作のJS-->
+    <script src="js/5-1-20.js"></script>
+ 
+    <script>
+    $(document).ready(function() {
+        // 淡入效果的调整，确保在Safari中兼容
+        $('.main-content1').css({ display: 'block', opacity: 0, top: '50px' }).animate({ top: '0', opacity: 1 }, 700);
+        $('.main-content2').css({ display: 'block', opacity: 0, top: '50px' }).delay(700).animate({ top: '0', opacity: 1 }, 700);
+        $('.main-content3').css({ display: 'block', opacity: 0, top: '50px' }).delay(700).animate({ top: '0', opacity: 1 }, 700);
+    
+        $(".openbtn1").click(function() {
+            $(this).toggleClass('active');
+            $("#g-nav").toggleClass('panelactive');
+            $(".circle-bg").toggleClass('circleactive');
+        });
+    
+        $("#g-nav a").click(function() {
+            $(".openbtn1").removeClass('active');
+            $("#g-nav").removeClass('panelactive');
+            $(".circle-bg").removeClass('circleactive');
+        });
+    });
+</script>
+    
+    
+
+</body>
+
+
+</html>
