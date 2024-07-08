@@ -240,19 +240,19 @@ margin-bottom: 8.6%;
 
 
 .main-contact{
-  max-width: 100%;
+  /* max-width: 100%; */
   width: 100%;
   height: auto;
   /* height: 870px; */
-  background-color: #B7BAC3;
 }
 
 .contact-title{
   font-size:8rem;
 font-weight: bold;
-margin: 0 0 0 70%;
+margin: 12% 0 0 70%;
 padding-top: 8%;
 color: #FAFA1B;
+
 
 }
 
@@ -263,16 +263,16 @@ color: #FAFA1B;
   display: flex;
   justify-content: center;
   padding-top: 110px;
-  padding-bottom: 230px;
+  padding-bottom: 300px;
   width: 100%;
 }
+
 .mailicon {
   width: 100px;
   height: auto;
-  max-width: 257px;
-  object-fit: cover;
-  margin: 0 auto; /* Center the icon horizontally */
-  display: block; /* Ensures the margin: auto works */
+   max-width: 257px; 
+   display: flex;
+  margin: 0 auto;
   padding-top: 10%;
 }
 
@@ -416,17 +416,21 @@ background-color: #EBEBE4;
 
 
 .typo1 , .typomockup1 ,.typo2 , .typo3 {
-  width: 601px;
-  height: 818px;
+  /* width: 601px;
+  height: 818px; */
 
+  width: 50%;
+  height: auto;
 }
 
 .typomockup2{
-  width: 1202px;
-  height: 810px;
+  /* width: 1202px;
+  height: 810px; */
+  width: 100%;
+  height: auto;
 }
-.typo-pic-group{
 
+.typo-pic-group{
 
 display: flex;
 flex-wrap: wrap;
@@ -469,18 +473,22 @@ line-height: 30px;
   padding: 64px 66px 64px 66px;
   line-height: 30px;
   box-sizing: border-box;
-  width: 1203px;
+  width: 100%;
 }
 .sprite-adv-b3-1,.sprite-adv-b3-2,.sprite-adv-b1-1 ,.sprite-adv-b1-2{
-  width: 601px ;
-  height: 441px;
+  /* width: 601px ; */
+  width: 50%;
+  height: auto;
+  /* height: 441px; */
   border: solid ;
   border-width: 0.1px;
 }
 
 .sprite-adv-mockup1,.sprite-adv-mockup2{
-  width: 601px;
-  height: 438px;
+  /* width: 601px; */
+  width: 50%;
+  /* height: 438px; */
+  height: auto;
   border: solid ;
   border-width: 0.1px;
 }
@@ -591,30 +599,44 @@ background-color: #EBEBE4;
  padding: 55px 0px 55px 0px;
   line-height: 30px;
   border: solid;
-  width: 1200px;
+  width: 100%;
 }
 
 
 
 .works-illu{
-  width: 1202px;
-  height: 742px;
+  width: 100%;
+  height: auto;
   border: solid;
   box-sizing: border-box;
 
 }
 
+
+.illu-pic-left{
+  width: 100%;
+  height: auto;
+  vertical-align: center; 
+
+}
+.illu-pic-right{
+  width: 100%;
+  height: auto;
+}
+
+
+
 .illu-dior-1{
-  width: 1200px;
-  height: 823px ;
+  width: 100%;
+  height: auto ;
   border: solid;
 
   vertical-align: middle;
 }
 
 .illu-dior-2{
-  width:604px ;
-  height:795px ;
+  width:100% ;
+  height:780px ;
   border: solid;
   vertical-align: middle;
 }
@@ -622,17 +644,17 @@ background-color: #EBEBE4;
 /* do not need to setup left and right width */
 .illu-pic-box{
   width: 100%;
-  height:795px ;
+  height:auto ;
   display: flex;
   justify-content: space-between;
 }
 
 .illu-dior-3 ,.illu-dior-4{
-  width: 594px ;
-  height: 396px;
+  width: 100% ;
+  height: 390px;
   border: solid;
-  /* border-width: 1px; */
-  vertical-align: middle; 
+  border-width: 1px; 
+   vertical-align: middle;  
 }
 
 
@@ -2306,14 +2328,38 @@ color: #FAFA1B;
   width: 100%;
 }
 .mailicon {
-  width: 100px;
+  width: 80px;
   height: auto;
   max-width: 257px;
-  object-fit: cover;
+  display: flex;
   margin: 0 auto; /* Center the icon horizontally */
-  display: block; /* Ensures the margin: auto works */
-  padding-top: 10%;
+  padding-top: 150px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* kokokara poster page */
 
@@ -2607,7 +2653,7 @@ background-color: #EBEBE4;
   height: auto;
 }
 .works-title-illu{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -2617,7 +2663,7 @@ background-color: #EBEBE4;
 }
 
 .works-title2-illu{
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-top: 68px;
@@ -2635,36 +2681,52 @@ background-color: #EBEBE4;
 }
 
 .illu-caption{
-  font-size: 1.6rem ;
+  font-size: 1rem ;
   font-family: Arial, Helvetica, sans-serif;
  /* padding: 55px 59px 55px 59px ;  */
- padding: 55px 0px 55px 0px;
+ padding: 20px 0px 20px 0px;
   line-height: 30px;
   border: solid;
   width: 100%;
+  height: auto;
 }
 
 
 
 .works-illu{
   width: 100%;
-  height: 742px;
+  width: 316.05px;
+  height: auto;
   border: solid;
   box-sizing: border-box;
+  padding-bottom: 1px;
 
 }
 
-.illu-dior-1{
-  width: 1200px;
-  height: 823px ;
-  border: solid;
+.illu-pic-left{
+  width: 100%;
+  height: auto;
+  vertical-align: center; 
 
+}
+.illu-pic-right{
+  width: 100%;
+  height: auto;
+}
+
+
+.illu-dior-1{
+  width: 100%;
+  height: auto;
+  border: solid;
   vertical-align: middle;
 }
 
 .illu-dior-2{
-  width:604px ;
-  height:795px ;
+  /* width:604px ;
+  height:795px ; */
+  /* width: 100%; */
+  height: 230px;
   border: solid;
   vertical-align: middle;
 }
@@ -2673,14 +2735,17 @@ background-color: #EBEBE4;
 .illu-pic-box{
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .illu-dior-3 ,.illu-dior-4{
-  width: 594px ;
-  height: 396px;
+   width: 100%; 
+  height: 115px;
   border: solid;
   border-width: 0.5px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
+  display: flex;
+  justify-content: center;
 }
 
 
